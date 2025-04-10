@@ -5,6 +5,7 @@ import { format, isSameMonth, isSameDay } from 'date-fns';
 import { FaChevronLeft, FaChevronRight, FaCheck } from 'react-icons/fa';
 import { IoIosArrowDown } from "react-icons/io";
 import Navbar from '../components/navbar';
+import { ReactNode } from 'react'
 
 type Todo = {
   id: number;
@@ -44,8 +45,8 @@ export default function CalendarPage() {
     const endDate = new Date(monthEnd);
     endDate.setDate(endDate.getDate() + (6 - endDate.getDay()));
 
-    const rows: JSX.Element[] = [];
-    let days: JSX.Element[] = [];
+    const rows: ReactNode[] = []
+    let days: ReactNode[] = []
     const day = new Date(startDate);
 
     while (day <= endDate) {
