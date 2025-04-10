@@ -8,7 +8,7 @@ const API_URL = 'http://127.0.0.1:8000/api';
 
 declare global {
   interface Window {
-    Telegram?: {
+     Telegram?: {
       WebApp: {
         initData?: string;
         initDataUnsafe?: {
@@ -130,7 +130,7 @@ export default function Reyting() {
             onClick={() => window.location.reload()}
             className="bg-red-500 hover:bg-red-600 text-white px-4 py-2 rounded-lg"
           >
-            Qayta urinib ko'rish
+            Qayta urinib korish
           </button>
         </div>
       </div>
@@ -169,7 +169,7 @@ export default function Reyting() {
 
         <div className='flex flex-col gap-2 relative z-10'>
           {topUsers.length === 0 ? (
-            <div className="text-gray-400 text-center py-4">Hozircha reytingda hech kim yo'q</div>
+            <div className="text-gray-400 text-center py-4">Hozircha reytingda hech kim yoq</div>
           ) : (
             topUsers.map((user, index) => (
               <div 
@@ -205,7 +205,7 @@ export default function Reyting() {
                   <span className={index < 3 ? 'text-red-500' : 'text-gray-400'}>
                     #{index + 1}
                   </span>
-                  <span className="text-gray-400 text-sm">{user.rank || index + 1} o'rin</span>
+                  <span className="text-gray-400 text-sm">{user.rank || index + 1} orin</span>
                 </div>
               </div>
             ))

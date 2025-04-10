@@ -1,8 +1,8 @@
 'use client';
 
 import React from 'react';
-import { ChevronRight, Settings, Trophy, Clock, User, Calendar, BarChart, Home } from 'lucide-react';
-import { FaFire, FaRunning, FaBook, FaMedal } from 'react-icons/fa';
+import { ChevronRight,  Trophy, Clock,} from 'lucide-react';
+import { FaFire, FaMedal } from 'react-icons/fa';
 import Navbar from '../components/navbar';
 const ProfilePage = () => {
   // User data
