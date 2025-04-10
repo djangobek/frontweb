@@ -46,7 +46,7 @@ export default function CalendarPage() {
 
     const rows: JSX.Element[] = [];
     let days: JSX.Element[] = [];
-    let day = new Date(startDate);
+    const day = new Date(startDate);
 
     while (day <= endDate) {
       for (let i = 0; i < 7; i++) {
@@ -184,7 +184,7 @@ export default function CalendarPage() {
                 </div>
               ))
             ) : (
-              <p className="text-gray-400 text-center py-4">Bu kunda vazifalar yo'q</p>
+              <p className="text-gray-400 text-center py-4">Bu kunda vazifalar yo`q</p>
             )}
           </div>
         </div>
